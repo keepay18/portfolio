@@ -106,3 +106,54 @@ div.my-information{
     font-size: 1.5rem;
     text-align: center;
 }
+
+#skills-section{
+    background-color: black;
+    color: white;
+}
+
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.skill-information{
+    padding: 2rem;
+    text-align: center;
+}
+
+.skill-name{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.skill-information a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#contact-section{
+    margin-top: 50px;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#contact-section a{
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+
+
+}
+
+
+
