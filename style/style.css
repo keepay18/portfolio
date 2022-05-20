@@ -1,3 +1,4 @@
+
 html{
     scroll-behavior: smooth;
 }
@@ -9,7 +10,39 @@ body{
     font-family: "Poppins",Arial, Helvetica, sans-serif;
 }
 
-#navbar {
+button {
+    background-color: #000;
+    border: solid 4px #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 35px;
+    outline-width: 5px;
+    position: relative;
+    width: 55px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+.icon {
+    background-color: grey;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 15px;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 15px;
+}
+
+.dark-night-text{
+    position: absolute;
+    top: 40px;
+    left: 6px;
+    font-size: 12px;
+}
+
+.navbar {
     margin: 0;
     padding: 5px 0;
     width: 100%;
@@ -18,10 +51,10 @@ body{
     top: 0;
     left: 0;
     background-color: white;
-    box-shadow: 0 10px 10px -5px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 10px -5px rgba(32,32,32,0.1);
 }
 
-#navbar ul{
+.navbar ul{
     display: flex;
     margin: 10px 0px 10px auto;
     width: 55%;
@@ -29,9 +62,9 @@ body{
     list-style: none;
 }
 
-#navbar ul li a{
+.navbar ul li a{
     margin-left: 3px;
-    color: black;
+    color: var(--black-text-color);
     opacity: 0.7;
     font-size: 1.2rem;
     font-family: "Poppins",Arial, Helvetica, sans-serif;
@@ -40,7 +73,7 @@ body{
 
 }
 
-#navbar ul li a:hover{
+.navbar ul li a:hover{
     color: lightgreen;
     opacity: 1;
     text-decoration: underline;
@@ -142,7 +175,7 @@ div.my-information{
 }
 
 #skills-section{
-    background-color: black;
+    background-color: rgb(32,32,32);
     color: white;
 }
 
@@ -166,7 +199,7 @@ div.my-information{
 }
 
 .skill-information a{
-    color: black;
+    color: var(--black-text-color);
     text-decoration: none;
     font-size: 1.5rem;
 }
@@ -174,7 +207,7 @@ div.my-information{
 #contact-section{
     margin-top: 50px;
     padding: 50px;
-    background-color: black;
+    background-color: rgb(32,32,32);
     color: white;
     text-align: center;
     font-size: 1.5rem;
@@ -185,9 +218,22 @@ div.my-information{
     color: white;
     text-decoration: none;
     font-family: "Poppins",Arial, Helvetica, sans-serif;
-
-
 }
 
+/* DARK SECTION */
+
+.dark{
+    background-color: rgb(32,32,32);
+    color: white;
+}
+
+.dark-border-bottom{
+    border-bottom: 2px solid white;
+}
+
+.icon-dark{
+    background-color: #FEFCD7;
+    transform: translateX(20px);
+}
 
 
