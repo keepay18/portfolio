@@ -112,12 +112,20 @@
         </section>
 
         <section id="contact-section">
-            <h1 class="section-heading">Let's work together</h1>
-            <p>Contact:</p>
-            <p>
-                <a href="mailto:j.pikula97@gmail.com"><i class="fas fa-envelope-square"></i> j.pikula97@gmail.com</a>
-                <a href="https://www.linkedin.com/in/jakub-piku%C5%82a-9a8414206/"><i class="fab fa-linkedin-in"></i> LinkedIN</a>
-            </p>
+            <h1 class="section-heading">Contact me</h1>
+            <form action="https://formsubmit.io/send/j.pikula97@gmail.com" method="POST">
+                <label for="mail">Your e-mail*</label>
+                <input id="mail" name="mail" type="mail" placeholder="Type your address">
+
+                <label for="mail">Your message*</label>
+                <textarea name="msg" id="msg" rows="5" placeholder="Type your message"></textarea>
+
+                <input id="submit" type="submit" value="Send">
+            </form>
+            
+            <div class="linkedin-info">
+                Also you can find me on &nbsp;<a href="https://www.linkedin.com/in/jakub-piku%C5%82a-9a8414206/"><span class="linkedin"><i class="fab fa-linkedin-in"></i> LinkedIN</span></a>
+            </div>
         </section>
 
     </main>

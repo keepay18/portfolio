@@ -205,6 +205,10 @@ div.my-information{
 }
 
 #contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 50px;
     padding: 50px;
     background-color: rgb(32,32,32);
@@ -213,11 +217,82 @@ div.my-information{
     font-size: 1.5rem;
 }
 
+
 #contact-section a{
     margin-right: 30px;
     color: white;
     text-decoration: none;
     font-family: "Poppins",Arial, Helvetica, sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 16px;
+    width: 400px;
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form input{
+    width: 50%;
+    background-color: rgb(32,32,32);
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    font-family: inherit;
+}
+
+form #submit{
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+form textarea{
+    width: 100%;
+    background-color: rgb(32,32,32);
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    font-family: inherit;
+}
+
+form label{
+    margin-top: 30px;
+}
+
+#submit{
+    margin-top: 40px;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    font-family: inherit;
+}
+
+#submit:hover{
+    background-color: lightgreen;
+    opacity: 0.9;
+    transition: all 0.1s;
+    border: 1px solid white;
+    text-decoration: underline;
+}
+
+.linkedin-info{
+    text-align: center;
+}
+
+
+.linkedin{
+    color: #0e76a8;
+    -webkit-text-stroke: 0.2px white;
+    font-weight: bold;
 }
 
 /* DARK SECTION */
