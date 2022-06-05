@@ -35,11 +35,21 @@ button {
     width: 15px;
 }
 
+#clock{
+    position: absolute;
+    top: 12px;
+    left: 160px;
+    color: orangered;
+    font-size: 24px;
+    display: flex;
+}
+
 .dark-night-text{
     position: absolute;
     top: 40px;
     left: 6px;
     font-size: 12px;
+
 }
 
 .navbar {

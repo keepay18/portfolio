@@ -1,6 +1,26 @@
 const darkModeBtnEl = document.querySelector("button");
 let theme = localStorage.getItem("theme") || "light";
 
+const hoursEl = document.querySelector("#hour");
+const minutesEl = document.querySelector("#minutes");
+const secondsEl = document.querySelector("#seconds");
+
+function updateClock(){
+    let hours = new Date().getHours();
+    let minutes = new Date().getMinutes();
+    let seconds = new Date().getSeconds();
+    hoursEl.innerText = hours + ":";
+    minutesEl.innerHTML = minutes + ":";
+    if (seconds < 10){
+        secondsEl.innerHTML = "0" + seconds;
+    }else{
+        secondsEl.innerHTML = seconds;
+    }
+    
+}
+setInterval(updateClock, 1000);
+
+
 darkModeBtnEl.addEventListener("click", function(){
     if(theme === "dark"){
         document.querySelector("body").classList.remove("dark");
