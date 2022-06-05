@@ -92,10 +92,9 @@ button {
 }
 
 #intro-section{
-    background-image:url("https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg") ;
+    background: url("/images/introPhoto.png");
     height: 300px;
     background-size: cover; /*wypełnienie obrazkiem ekrany*/
-
 }
 
 #welcome-section{
