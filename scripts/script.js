@@ -9,14 +9,9 @@ function updateClock(){
     let hours = new Date().getHours();
     let minutes = new Date().getMinutes();
     let seconds = new Date().getSeconds();
-    hoursEl.innerText = hours + ":";
-    minutesEl.innerHTML = minutes + ":";
-    if (seconds < 10){
-        secondsEl.innerHTML = "0" + seconds;
-    }else{
-        secondsEl.innerHTML = seconds;
-    }
-    
+    hours < 10 ? hoursEl.innerHTML = "0" + hours : hoursEl.innerHTML = hours + ":";
+    minutes < 10 ? minutesEl.innerHTML = "0" + minutes : minutesEl.innerHTML = minutes + ":";
+    seconds < 10 ? secondsEl.innerHTML = "0" + seconds : secondsEl.innerHTML = seconds;
 }
 setInterval(updateClock, 1000);
 

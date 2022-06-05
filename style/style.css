@@ -92,7 +92,7 @@ button {
 }
 
 #intro-section{
-    background-image: url("/images/introPhoto.png");
+    background-image: url("/images/introPhoto.jpg");
     height: 300px;
     background-size: cover; /*wypełnienie obrazkiem ekrany*/
 }
